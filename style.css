@@ -1,13 +1,14 @@
 body {
   margin: 0;
   font-family: 'Prompt', sans-serif;
-  background: #fdfaf5;
-  color: #3a2e1f;
+  background: #fff6f9; /* ชมพูอ่อน */
+  color: #4a2b1c;
   line-height: 1.6;
 }
 
+/* Header */
 header {
-  background: #5c3b23;
+  background: #f07d7d; /* ชมพูสด */
   color: white;
   padding: 16px 24px;
   display: flex;
@@ -31,31 +32,34 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  padding: 10px 20px;  /* ✅ ระยะห่างภายในลิงก์ */
+  padding: 10px 20px;
   display: block;
 }
 
+/* Hamburger */
 .hamburger {
   display: none;
   font-size: 26px;
   cursor: pointer;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(to bottom, #fff4e3, #ffe2b5);
+  background: linear-gradient(to bottom, #fff7e3, #ffd5a6); /* เหลืองอ่อน */
 }
 
 .hero h1 {
   font-size: 32px;
   margin-bottom: 25px;
+  color: #b3543f;
 }
 
 .hero button {
   padding: 14px 28px;
   font-size: 16px;
-  background: #b97a57;
+  background: #f07d7d;
   color: white;
   border: none;
   cursor: pointer;
@@ -63,11 +67,13 @@ nav a {
   font-weight: bold;
 }
 
+/* Sections */
 .menu, .franchise, .contact {
   padding: 50px 20px;
   text-align: center;
 }
 
+/* เมนูแบบการ์ด */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -75,23 +81,45 @@ nav a {
   margin-top: 25px;
 }
 
-.menu .item {
+.item-card {
   background: #fff;
-  padding: 16px;
-  border: 2px solid #f1d3b2;
+  padding: 12px;
   border-radius: 10px;
-  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #ffbdbd;
 }
 
+.item-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #d45b5b;
+}
+
+.item-card p {
+  margin: 0;
+  font-weight: bold;
+  color: #f07d7d;
+}
+
+/* Franchise box */
 .franchise-box {
-  background: #fffef9;
+  background: #fffdf9;
   padding: 25px;
-  border: 1px solid #e0c5a5;
+  border: 1px solid #ffd1bc;
   max-width: 600px;
   margin: auto;
   border-radius: 12px;
 }
 
+/* Form */
 .franchise-form {
   margin-top: 35px;
   display: flex;
@@ -112,7 +140,7 @@ nav a {
 }
 
 .franchise-form button {
-  background-color: #5c3b23;
+  background-color: #f07d7d;
   color: white;
   padding: 14px;
   border: none;
@@ -121,24 +149,26 @@ nav a {
   cursor: pointer;
 }
 
+/* Footer */
 footer {
-  background: #5c3b23;
+  background: #f07d7d;
   color: white;
   text-align: center;
   padding: 16px;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   nav {
     display: none;
     flex-direction: column;
-    background: #5c3b23;
+    background: #f07d7d;
     width: 100%;
     position: absolute;
     top: 60px;
     left: 0;
     z-index: 1;
-    padding-top: 20px; /* ✅ ระยะห่างด้านบน */
+    padding-top: 20px;
   }
 
   nav.active {
@@ -153,32 +183,4 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     text-align: left;
   }
-}
-
-/* ✅ เมนูแบบการ์ดรูปภาพ */
-.item-card {
-  background: #fff;
-  padding: 12px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.item-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.item-card h3 {
-  margin: 10px 0 5px;
-  font-size: 18px;
-  color: #5c3b23;
-}
-
-.item-card p {
-  margin: 0;
-  font-weight: bold;
-  color: #b97a57;
 }
