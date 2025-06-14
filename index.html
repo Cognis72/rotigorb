@@ -1,88 +1,223 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>โรตีกรอบฉ่ำเนย | แฟรนไชส์โรตีอันดับหนึ่งในไทย</title>
-  <meta name="description" content="โรตีกรอบฉ่ำเนย เปิดแฟรนไชส์ทั่วประเทศ โรตีหอมกรอบ  พร้อมอุปกรณ์ขายครบในราคาพิเศษ">
-  <meta name="keywords" content="โรตี, ชาชัก, แฟรนไชส์โรตี, แฟรนไชส์อาหาร, roti franchise, franchise thai tea">
-  <meta name="author" content="โรตีกรอบฉ่ำเนย">
-  <meta property="og:title" content="โรตีกรอบฉ่ำเนย - แฟรนไชส์โรตีเจ้าดังทั่วไทย">
-  <meta property="og:description" content="เปิดร้านโรตีง่าย ๆ กับโรตีกรอบฉ่ำเนย พร้อมสูตรลับและอุปกรณ์ครบชุด">
-  <meta property="og:image" content="https://example.com/roti-cover.jpg">
-  <meta property="og:url" content="https://tengroti.com">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy Roti with Butter - Authentic Thai Street Food</title>
+    <meta name="description" content="Authentic Thai street food specializing in crispy roti with butter. Fresh, warm, and delicious roti served daily.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">โรตีกรอบฉ่ำเนย</div>
-    <nav id="nav-links">
-      <a href="#menu">เมนู</a>
-      <a href="#franchise">แฟรนไชส์</a>
-      <a href="#contact">ติดต่อเรา</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cookie-bite"></i>
+                <span>Crispy Roti</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-en="Home" data-th="หน้าแรก">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link" data-en="Menu" data-th="เมนู">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-en="About" data-th="เกี่ยวกับ">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-en="Contact" data-th="ติดต่อ">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button id="lang-toggle" class="lang-toggle">
+                        <span class="lang-text">TH</span>
+                    </button>
+                </li>
+            </ul>
+            
+            <!-- Mobile Hamburger -->
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-  </header>
 
-  <section class="hero">
-    <h1>โรตีเจ้าดัง รสชาติเข้มข้น</h1>
-    <button onclick="location.href='#franchise'">สมัครแฟรนไชส์</button>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-en="Crispy Roti with Butter" data-th="โรตีกรอบฉ่ำเนย">Crispy Roti with Butter</h1>
+            <p class="hero-subtitle" data-en="Authentic Thai Street Food Experience" data-th="ประสบการณ์อาหารข้างทางไทยแท้">Authentic Thai Street Food Experience</p>
+            <p class="hero-tagline" data-en="Golden, crispy, and bursting with flavor - just like the streets of Thailand" data-th="กรอบ หอม อร่อย เหมือนข้างถนนในไทย">Golden, crispy, and bursting with flavor - just like the streets of Thailand</p>
+            <a href="#menu" class="cta-button">
+                <i class="fas fa-utensils"></i>
+                <span data-en="Explore Our Menu" data-th="ดูเมนูของเรา">Explore Our Menu</span>
+            </a>
+        </div>
+        <div class="hero-decoration">
+            <div class="floating-icon">🥞</div>
+            <div class="floating-icon">🧈</div>
+            <div class="floating-icon">✨</div>
+        </div>
+    </section>
 
-<section id="menu" class="menu">
-  <h2>เมนูยอดนิยม</h2>
-  <div class="menu-grid">
-    <div class="item-card">
-      <img src="images/roti-egg.jpg" alt="โรตีกรอบ">
-      <h3>โรตีกรอบ</h3>
-      <p>เริ่มต้น 25฿</p>
-    </div>
-  </div>
-</section>
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Signature Roti" data-th="โรตีซิกเนเจอร์ของเรา">Our Signature Roti</h2>
+            <p class="section-subtitle" data-en="Fresh, warm, and made to order" data-th="สด อุ่น ทำตามสั่ง">Fresh, warm, and made to order</p>
+            
+            <div class="menu-grid">
+                <!-- Roti Card 1 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <i class="fas fa-cookie-bite card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Classic Butter Roti</h3>
+                        <p class="card-description">Our signature crispy roti with rich, melted butter and a hint of sweetness</p>
+                        <div class="card-price">฿35</div>
+                    </div>
+                </div>
 
+                <!-- Roti Card 2 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <i class="fas fa-candy-cane card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sugar & Condensed Milk</h3>
+                        <p class="card-description">Sweet and indulgent roti topped with sugar and creamy condensed milk</p>
+                        <div class="card-price">฿40</div>
+                    </div>
+                </div>
 
-  <section id="franchise" class="franchise">
-    <h2>แพ็กเกจแฟรนไชส์</h2>
-    <div class="franchise-box">
-      <p>✅ ชุดเริ่มต้น 49,000 บาท (พร้อมอุปกรณ์ขาย)</p>
-      <p>✅ ชุดมืออาชีพ 73,000 บาท (เพิ่มเคาน์เตอร์+สื่อโปรโมท)</p>
-      <ul>
-        <li>สูตรลับจากร้านต้นตำรับ</li>
-        <li>อุปกรณ์ครบพร้อมขาย</li>
-        <li>การตลาดและที่ปรึกษาแฟรนไชส์</li>
-      </ul>
-    </div>
+                <!-- Roti Card 3 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <i class="fas fa-apple-alt card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Banana Roti</h3>
+                        <p class="card-description">Fresh banana slices wrapped in crispy roti with butter and sugar</p>
+                        <div class="card-price">฿45</div>
+                    </div>
+                </div>
 
-    <form class="franchise-form" action="https://formspree.io/f/your_form_id" method="POST">
-      <h3>สมัครแฟรนไชส์กับเรา</h3>
-      <input type="text" name="name" placeholder="ชื่อ - นามสกุล" required>
-      <input type="tel" name="phone" placeholder="เบอร์โทรศัพท์" required>
-      <input type="text" name="province" placeholder="จังหวัดที่ต้องการเปิดร้าน" required>
-      <textarea name="message" placeholder="ข้อมูลเพิ่มเติม เช่น ทำเล พื้นที่ ฯลฯ" rows="4"></textarea>
-      <button type="submit">ส่งข้อมูล</button>
-    </form>
-  </section>
+                <!-- Roti Card 4 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <i class="fas fa-egg card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Egg Roti Special</h3>
+                        <p class="card-description">Savory roti with egg, served with our special curry dipping sauce</p>
+                        <div class="card-price">฿50</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>ติดต่อเรา</h2>
-    <p>📞 โทร: 099-xxx-xxxx</p>
-    <p>📱 LINE: @rotigorbi</p>
-    <p>📍 สาขาหลัก: กรุงเทพ</p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Authentic Street Food Experience</h2>
+                    <p class="about-description">
+                        Step into the vibrant world of Thai street food with our authentic crispy roti. 
+                        Each roti is hand-stretched and cooked fresh on our sizzling griddle, creating 
+                        that perfect golden crispiness that melts in your mouth.
+                    </p>
+                    <p class="about-description">
+                        From the bustling streets of Bangkok to your neighborhood, we bring the genuine 
+                        taste and atmosphere of Thai street food culture. Our recipes have been passed 
+                        down through generations, ensuring every bite is an authentic experience.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <span>Fresh Daily</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Made with Love</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Authentic Recipe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-element">
+                        <i class="fas fa-store"></i>
+                        <p>Traditional Street Food Stall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 โรตีกรอบฉ่ำเนย</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have questions or want to place an order? We'd love to hear from you!</p>
+            
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                
+                <button type="submit" class="submit-button">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
 
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById("nav-links");
-      nav.classList.toggle("active");
-    }
-  </script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-cookie-bite"></i>
+                    <span>Crispy Roti with Butter</span>
+                </div>
+                <p class="footer-text">Bringing authentic Thai street food to your neighborhood</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-line"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Crispy Roti with Butter. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
